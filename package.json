@@ -4,7 +4,7 @@
   "description": "Better workers for Vite",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mathe42/vite-plugin-comlink"
+    "url": "https://github.com/mathe42/vite-plugin-worker"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
