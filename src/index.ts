@@ -6,6 +6,13 @@ import { animation } from "./worklets/animation";
 import { serviceWorker } from "./worker/serviceWorker";
 import { worker } from "./worker/worker";
 import { sharedWorker } from "./worker/sharedWorker";
+import pluginHelper, { setPluginContext } from 'vite-plugin-bundle'
+
+
+export {
+  pluginHelper,
+  setPluginContext
+}
 
 export interface PluginOption {
   inline_worklet_paint?: boolean;
