@@ -47,16 +47,14 @@ export function worker(): Plugin {
       if(!settings.includes('single')) {
         return `
           export default function workerWrapper() {
-            return new Worker(${JSON.stringify(file)}, ${JSON.stringify({
+            return new Worker(${file}, ${JSON.stringify({
               type: buildType === 'iife' ? 'classic' : 'module'
             })})
           }
         `
       } else {
         return `
-          let myWorker = = new Worker(${JSON.stringify(
-            file
-          )}, ${JSON.stringify({
+          let myWorker = = new Worker(${file}, ${JSON.stringify({
           type: buildType === "iife" ? "classic" : "module",
         })})
           export default myWorker

@@ -57,16 +57,14 @@ export function sharedWorker(): Plugin {
       if (!settings.includes("single")) {
         return `
           export default function workerWrapper() {
-            return new SharedWorker(${JSON.stringify(file)}, ${JSON.stringify({
+            return new SharedWorker(${file}, ${JSON.stringify({
           type: buildType === "iife" ? "classic" : "module",
         })})
           }
         `;
       } else {
         return `
-          let myWorker = = new SharedWorker(${JSON.stringify(
-            file
-          )}, ${JSON.stringify({
+          let myWorker = = new SharedWorker(${file}, ${JSON.stringify({
           type: buildType === "iife" ? "classic" : "module",
         })})
           export default myWorker
