@@ -123,6 +123,5 @@ In production the default is to use a single file. This is a litte bad for perfo
 
 > The default behavior might change in future updates when FF & Safari support module workers.
 
-
 ## If you target only chromium based browsers
 If you build a chromium only webpage for example for electron etc. You should import all workers with `worker-module:./myfile`. This is (should) result in the best posible performance! But you might want to use the inline option so you have less files.

@@ -162,7 +162,6 @@ declare const SWorker: (
   config: Omit<RegistrationOptions, "type">
 ) => Promise<ServiceWorkerRegistration>;
 
-
 declare module "serviceworker:*" {
   export default SWorker;
 }
@@ -171,6 +170,6 @@ declare module "paintworklet:*" {}
 declare module "layoutworklet:*" {}
 declare module "animationworklet:*" {}
 declare module "audioworklet:*" {
-  const worklet: (ctx: BaseAudioContext) => void
-  export default worklet
+  const worklet: (ctx: BaseAudioContext) => void;
+  export default worklet;
 }
