@@ -654,10 +654,10 @@ typescript@4.4.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
-vite-plugin-bundle@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-bundle/-/vite-plugin-bundle-0.3.0.tgz#647e3488c490cb525eff3260218c6dd2e3896400"
-  integrity sha512-I+IRDL3GvRWD54bzl9+CEMpO/jHq3huypjX9pG6YuWxJHDOqRnkHl/rNd5UCDk0p05Z0yAvGzb3KncPjCfVxYg==
+vite-plugin-bundle@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-bundle/-/vite-plugin-bundle-1.0.0.tgz#627349c4209d824125029dba4edf69ec4a7ae6ec"
+  integrity sha512-mpP09F+7717V1gUvqmvp5SxQ/LoSpSfgcrRBzAOy+1s9C1I+FK+L7gKYmjJXuXlXeX6Q9hvYPXhpkzRo10DLtg==
   dependencies:
     magic-string "^0.25.7"
 
