@@ -12,10 +12,11 @@ npm i --save-dev vite-plugin-worker # yarn add -D vite-plugin-worker
 
 ```ts
 // vite.config.js
-import worker from 'vite-plugin-worker'
+import worker, {bundleHelper} from 'vite-plugin-worker'
 
 export default {
   plugins: [
+    bundleHelper(),
     worker({
       // All options with default values
       inline_worklet_paint = false,
@@ -27,6 +28,9 @@ export default {
   ],
 }
 ```
+
+The `bundleHelper` Plugin is used internaly and is important. But you should only add it once!
+
 ## Import worklets
 
 To import a worklet just import it like this:
