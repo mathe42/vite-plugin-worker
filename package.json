@@ -6,12 +6,13 @@
     "type": "git",
     "url": "https://github.com/mathe42/vite-plugin-worker"
   },
+  "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Sebastian Krüger (@mathe42)",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "vite": "^2.5.0"
   },
   "dependencies": {
+    "tsup": "^5.1.0",
     "vite-plugin-bundle": "^0.3.0"
   }
 }
