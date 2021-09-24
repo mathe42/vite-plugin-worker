@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-worker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Better workers for Vite",
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "tsup": "^5.1.0",
-    "vite-plugin-bundle": "^0.3.0"
+    "vite-plugin-bundle": "^1.0.0"
   }
 }
