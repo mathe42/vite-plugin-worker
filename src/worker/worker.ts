@@ -42,7 +42,7 @@ export function worker(): Plugin {
       const buildType = isBuild ? (settings.includes('module') ? 'module' : 'iife') : (settings.includes('iife') ? 'iife' : 'module')
 
 
-      const file = await bundle(this, realID, 'worker', buildType, isBuild && settings.includes('inline'), isBuild)
+      const file = await bundle(this, realID, 'worker', buildType, isBuild && settings.includes('inline'), !isBuild)
 
       if(!settings.includes('single')) {
         return `

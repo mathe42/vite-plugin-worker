@@ -51,7 +51,7 @@ export function sharedWorker(): Plugin {
         "worker",
         buildType,
         isBuild && settings.includes("inline"),
-        isBuild
+        !isBuild
       );
 
       if (!settings.includes("single")) {
