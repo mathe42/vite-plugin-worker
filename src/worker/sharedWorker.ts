@@ -13,6 +13,8 @@ export function sharedWorker(): Plugin {
       const [p1, ...rest] = id.split(":");
       if (!p1.startsWith(WORKER_SCHEMA)) return;
 
+      if (!importer) return id;
+
       const realID = await this.resolve(rest.join(":"), importer);
 
       if (!realID) throw new Error(`SharedWorker file ${id} not found!`);

@@ -18,6 +18,8 @@ export function worker(): Plugin {
       const [p1, ...rest] = id.split(':')
       if(!p1.startsWith(WORKER_SCHEMA)) return
 
+      if(!importer) return id;
+
       const realID = await this.resolve(rest.join(":"), importer);
 
       if (!realID) throw new Error(`Worker file ${id} not found!`);

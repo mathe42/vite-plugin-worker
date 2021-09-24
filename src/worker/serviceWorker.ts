@@ -10,6 +10,8 @@ export function serviceWorker(filename: string): Plugin {
     async resolveId(id, importer) {
       if (!id.startsWith(SERVICE_WORKER_SCHEMA)) return;
 
+      if (!importer) return id;
+
       const realID = await this.resolve(
         id.slice(SERVICE_WORKER_SCHEMA.length),
         importer
