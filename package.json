@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-worker",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Better workers for Vite",
   "repository": {
     "type": "git",
@@ -15,14 +15,14 @@
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
-    "@types/node": "16.7.4",
-    "typescript": "4.4.2",
-    "vite": "2.5.1"
+    "@types/node": "16.9.6",
+    "typescript": "4.4.3",
+    "vite": "2.5.10"
   },
   "peerDependencies": {
     "vite": "^2.5.0"
   },
   "dependencies": {
-    "vite-plugin-bundle": "^0.2.0"
+    "vite-plugin-bundle": "^0.3.0"
   }
 }
