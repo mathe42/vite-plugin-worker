@@ -54,7 +54,7 @@ export function worker(): Plugin {
         `
       } else {
         return `
-          let myWorker = = new Worker(${file}, ${JSON.stringify({
+          let myWorker = new Worker(${file}, ${JSON.stringify({
           type: buildType === "iife" ? "classic" : "module",
         })})
           export default myWorker
