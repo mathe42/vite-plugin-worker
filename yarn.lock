@@ -776,10 +776,10 @@ vite-plugin-bundle@^1.0.0:
   dependencies:
     magic-string "^0.25.7"
 
-vite@2.7.8:
-  version "2.7.8"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.8.tgz#0bfd4b513f8dfc8edcf2ea2d2490655dd44f404a"
-  integrity sha512-NOgvRtXUq4/7srE2cTQ2IU1oERdGq2njVOlZtgRrjMO+PPJpncd61/AUzxzZklQ1zBkiWXEVrw3Csq0Sbgr0rQ==
+vite@2.7.10:
+  version "2.7.10"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.10.tgz#d12c4c10e56a0ecf7890cb529c15996c6111218f"
+  integrity sha512-KEY96ntXUid1/xJihJbgmLZx7QSC2D4Tui0FdS0Old5OokYzFclcofhtxtjDdGOk/fFpPbHv9yw88+rB93Tb8w==
   dependencies:
     esbuild "^0.13.12"
     postcss "^8.4.5"
