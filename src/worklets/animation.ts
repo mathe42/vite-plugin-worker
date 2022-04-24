@@ -29,11 +29,11 @@ export function animation(inline_worklet_animation: boolean): Plugin {
 
       return ANIMATION_WORKLET_SCHEMA + realID.id;
     },
-    load(id) {
+    async load(id) {
       if (id === ANIMATION_WORKLET_HELPER) return ANIMATION_WORKLET_HELPER_CODE;
       if (!id.startsWith(ANIMATION_WORKLET_SCHEMA)) return;
 
-      const url = bundle(
+      const url = await bundle(
         this,
         id.slice(ANIMATION_WORKLET_SCHEMA.length),
         "worklet@animation",
