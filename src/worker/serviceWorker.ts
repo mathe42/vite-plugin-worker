@@ -21,10 +21,10 @@ export function serviceWorker(filename: string): Plugin {
 
       return SERVICE_WORKER_SCHEMA + realID.id;
     },
-    load(id) {
+    async load(id) {
       if (!id.startsWith(SERVICE_WORKER_SCHEMA)) return;
 
-      const url = bundle(
+      const url = await bundle(
         this,
         id.slice(SERVICE_WORKER_SCHEMA.length),
         "worker@service",
