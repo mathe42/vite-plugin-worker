@@ -29,11 +29,11 @@ export function layout(inline_worklet_layout: boolean): Plugin {
 
       return LAYOUT_WORKLET_SCHEMA + realID.id;
     },
-    load(id) {
+    async load(id) {
       if (id === LAYOUT_WORKLET_HELPER) return LAYOUT_WORKLET_HELPER_CODE;
       if (!id.startsWith(LAYOUT_WORKLET_SCHEMA)) return;
 
-      const url = bundle(
+      const url = await bundle(
         this,
         id.slice(LAYOUT_WORKLET_SCHEMA.length),
         "worklet@layout",
