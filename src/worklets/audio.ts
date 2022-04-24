@@ -31,11 +31,11 @@ export function audio(inline_worklet_audio: boolean): Plugin {
 
       return AUDIO_WORKLET_SCHEMA + realID.id;
     },
-    load(id) {
+    async load(id) {
       if (id === AUDIO_WORKLET_HELPER) return AUDIO_WORKLET_HELPER_CODE;
       if (!id.startsWith(AUDIO_WORKLET_SCHEMA)) return;
 
-      const url = bundle(
+      const url = await bundle(
         this,
         id.slice(AUDIO_WORKLET_SCHEMA.length),
         "worklet@audio",
